@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@700&display=swap');
+
+*{    
+font-family: Montserrat;
+}
+header {
+    background-color: #fff;
+    padding: 10px;
+    padding-top: 1%;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.separator {
+  border: none;
+  border-top: 5px solid rgb(0, 55, 85);
+  margin: 20px auto;
+  width: 50%;
+}
+
+.logo img {
+    height: 40px;
+    width: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu li {
+    margin-left: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+}
+
+
+.hero {
+    position: relative;
+    height: 700px; /* Adjust the height as needed */
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)), url(img/hero\ bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    text-align: right;
+    color: #fff;
+}
+
+.hero-content h1 {
+    font-family: Roboto;
+    font-size: 72px;
+    padding-right: 25%;
+    color: rgb(0, 55, 85);
+}
+
+.about {
+    text-align: center;
+    padding: 40px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.about-title h2 {
+    color: rgb(0, 55, 85);
+    font-size: 35px;
+    font-family: Roboto;
+    padding-bottom: 1%;
+}
+
+.about-description {
+    font-size: 16px;
+    font-family: Montserrat;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.gallery {
+    text-align: center;
+    padding-top: 40px;
+}
+
+.gallery-title h2 {
+    color: rgb(0, 55, 85);
+    font-size: 35px;
+    font-family: Roboto;
+    padding-bottom: 1%;}
+    
+.image-gallery-container {
+    max-height: 400px; /* Adjust the max height as needed */
+    overflow-y: auto;
+    margin-top: 20px;
+}    
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.image-gallery a {
+    margin: 10px;
+}
+
+.image-gallery img {
+    width: 200px; /* Adjust the width as needed */
+    height: auto;
+    margin: 10px;
+}
+
+.lightbox {
+    background: rgb(0, 55, 85);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.lightbox.open {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.lightbox-inner {
+    max-width: 90%;
+    max-height: 90%;
+    overflow: auto;
+}
+
+.lightbox-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    margin: 0 auto;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+
+.video-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video {
+    width: 50%;
+    padding: 5%;
+}
+
+.video iframe {
+    width: 100%;
+    height: 315px;
+}
+
+
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #d6dee1;
+    border-radius: 20px;
+    border: 6px solid transparent;
+    background-clip: content-box;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #a8bbbf;
+  }
+
+.contact {
+    text-align: center;
+    padding: 40px;
+    justify-content: center;
+    padding-left: 30%;
+    padding-right: 30%;
+}
+
+.contact-title h2 {
+    color: rgb(0, 55, 85);
+    font-size: 35px;
+    font-family: Roboto;
+    padding-bottom: 1%;
+}
+
+textarea {
+	width: 100%;
+	height: 150px;
+	line-height: 150%;
+}
+
+input:hover, textarea:hover,
+input:focus, textarea:focus {
+	background-color:rgb(199, 199, 199);
+}
+
+
+.container.contact{
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;  }
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+  
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(0, 55, 85);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+  
+#responseMessage {
+  margin-top: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+  
+
+
+/*------- Footer Area Start -----------*/
+.footer-icons ul li {
+  display: inline-block;
+}
+  
+.footer-icons ul li a {
+  border: 1px solid #444;
+  color: #444;
+  display: block;
+  font-size: 16px;
+  height: 40px;
+  line-height: 38px;
+  margin-right: 5px;
+  text-align: center;
+  width: 40px;
+  border-radius: 50%;
+}
+  
+.footer-icons {
+  text-align: center;
+}
+  
+.footer-contacts p span {
+color: #3EC1D5;
+font-weight: 700;
+}
+  
+.popular-tag ul li {
+  display: inline-block;
+}
+  
+.footer-content {
+  display: block;
+  overflow: hidden;
+}
+  
+.popular-tag ul li a:hover, 
+.footer-icons ul li a:hover {
+  background: #3EC1D5;
+  border: 1px solid #3EC1D5;
+  color: #fff;
+}
+  
+.popular-tag ul li a {
+  border: 1px solid #444;
+  border-radius: 30px;
+  color: #444;
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  margin: 5px 3px;
+  padding: 5px 10px;
+  position: relative;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all 0.4s ease 0s;
+  width: 70px;
+  text-align: center;
+}
+  
+.footer-area-bottom {
+  background: #f1f1f1 none repeat scroll 0 0;
+  padding: 15px 0;
+}
+  
+.copyright-text a:hover {
+  text-decoration: underline;
+  color: #3EC1D5;
+}
+  
+.copyright-text a {
+  color: #444;
+}
+  
+.copyright> p {
+  margin-bottom: 0;
+  color: #444;
+}
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 580px) {
+	#form-div{
+		left: 3%;
+		margin-right: 3%;
+		width: 88%;
+		margin-left: 0;
+		padding-left: 3%;
+		padding-right: 3%;
+	}
+}
