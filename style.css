@@ -400,7 +400,11 @@ font-weight: 700;
     max-width: 50%;
   }
 
-  img {
+  header img {
     display: none;
+  }
+  
+  nav{
+    margin-right: 7%;
   }
 }
